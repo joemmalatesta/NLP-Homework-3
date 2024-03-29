@@ -26,15 +26,7 @@
 ### Results
 
 - The accuracy and F1 for each model in this assignment are as follows.
-| Model Type | Accuracy | F1 Score |
-| --- | --- | --- |
-| BERT Fine-Tuned | 0.89 | 0.88 |
-| RoBERTa Fine-Tuned | 0.91 | 0.90 |
-| GPT-3.5-turbo | 0.87 | 0.86 |
-| GPT-4-turbo | 0.92 | 0.90 |
-| BOW + Logistic Regression | 0.65 | 0.63 |
-| Random Baseline | 0.50 | 0.50 |
-| Majority/Target Class Baseline | 0.60 | 0.00 |
+![results](/results.png)
 - **Conclusions** After fine tuning BERT and roBERTa to achieve the sole task of detecting hate speech, I found that these models performed equally as well or better than the zero-shot classification models even with far more parameters and decent prompt engineering. To me, this tells me that general purpose models are not the end-all be-all for NLP tasks. In fact, fine tuning your own models for smaller or more specific tasks can actually be more beneficial and cost effective than using pre trained, general purpose models like GPT-4. Personally, this assignment and these results were eye opening to me because I have in the past, used prompt engineering with GPT-3.5 and 4 models in order to get a specific output for a game I made, [Groople](https://groople.xyz). With this assignment in mind, it shows me that if I wanted to expand this game and make it more correct and cost effective, I could fine tune my own model with a smaller amount of tokens and it could perform better. 
 
 ### Reflection
